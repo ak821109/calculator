@@ -10,5 +10,6 @@ int main()
     cout << "\n\n\t\t 3. MULTIPLICATION.";
     cout << "\n\n\t\t 4. DIVIDING.";
     cout << "\n\n\t\t 5. PERCENTAGE.";
+    cout<<"\n\n\n\t\t\t";
     return 0;
 }
