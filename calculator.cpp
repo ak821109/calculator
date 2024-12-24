@@ -1,9 +1,11 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 int main()
 {
     system("cls");
-    int num;
+    int op,result;
+    double num1,num2;
     cout << "\n\n\n\n\n\t\t\t\t\t ***** CALCULATOR *****";
     cout << "\n\n\t\t";
     cout << "\n\n\t\t 1. ADDITION.";
@@ -13,17 +15,37 @@ int main()
     cout << "\n\n\t\t 5. PERCENTAGE.";
     cout<<"\n\n\n\t\t\t";
     cout<<"choose the above option:";
-    cin>>num;
-    switch(num)
+    cin>>op;
+    cout<<" Enter the two number:";
+    cin>>num1>>num2;
+    switch(op)
     {
         case 1:
-        add();
+        result=num1+num2;
+        cout<<result;
+        break;
+        case 2:
+        result=num1-num2;
+        cout<<result;
+        break;
+        case 3:
+        result=num1*num2;
+        cout<<result;
+        break;
+        case 4:
+        if(num2==0)
+        {
+            cout<<"can not divide";
+            return 1;
+        }
+        result=num1/num2;
+        cout<<result;
+        break;
+        case 5:
+        result=num1/num2*100;
+        cout<<result;
+        break;
+
     }
     return 0;
-}
-int add()
-{
-    double num1,num2;
-    cout<<"Enter the first and second number"; 
-
 }
