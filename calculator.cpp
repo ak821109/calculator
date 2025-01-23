@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    system("cls");
+    //system("cls");
     int op,result;
     double num1,num2;
     cout << "\n\n\n\n\n\t\t\t\t\t ***** CALCULATOR *****";
